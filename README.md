@@ -3,6 +3,6 @@
 
 # Анализатор страниц
 
-Page Analyzer – это сайт, который анализирует указанные страницы на SEO-пригодность по аналогии с PageSpeed Insights:
+Анализатор страниц – это сайт, который анализирует указанные страницы на SEO-пригодность по аналогии с PageSpeed Insights:
 
-### [web-site](https://python-project-83-xakg.onrender.com/)
+### Проверить работу анализатора можно [тут](https://python-project-83-xakg.onrender.com/)
