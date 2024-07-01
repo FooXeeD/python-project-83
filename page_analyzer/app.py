@@ -35,6 +35,7 @@ def index():
     return render_template('index.html')
 
 
+
 @app.post('/urls')
 def urls_create():
     url = request.form.to_dict()['url'].strip()
@@ -62,6 +63,7 @@ def urls():
     return render_template('urls.html', urls=urls)
 
 
+
 @app.get('/urls/<int:id>')
 def url(id):
     url = get_url_by_id(DATABASE_URL, id)
@@ -74,6 +76,7 @@ def url(id):
         url=url,
         url_checks=url_checks
     )
+
 
 
 @app.post('/urls/<int:id>/checks')
@@ -91,6 +94,7 @@ def url_checks(id):
         flash('Произошла ошибка при проверке', 'danger')
     finally:
         return redirect(url_for('url', id=id))
+    
 
 
 @app.errorhandler(404)
