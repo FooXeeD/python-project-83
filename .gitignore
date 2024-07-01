@@ -6,6 +6,7 @@ dist/*
 .DS_Store
 .venv/
 .env
+.env-my
 .coverage
 coverage.xml
 .pytest_cache/
