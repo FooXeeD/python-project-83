@@ -7,7 +7,7 @@ def validate_url(url):
     if not validators.url(url):
         errors.append(('Некорректный URL', 'danger'))
     if len(url) > 255:
-        errors.append(('Error! Url length > 255', 'danger'))
+        errors.append(('Ошибка! Адрес содержит символов > 255', 'danger'))
     return errors
 
 
