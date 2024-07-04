@@ -5,6 +5,9 @@ description = ""
 authors = ["FooXeeD <fooxeed@mail.ru>"]
 readme = "README.md"
 repository = "https://github.com/FooXeeD/python-project-83"
+packages = [
+    {include = "page_analyzer"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
