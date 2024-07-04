@@ -13,3 +13,5 @@ coverage.xml
 .idea/
 poetry.lock
 lib64/
+lib/
+bin/

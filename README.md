@@ -1,13 +1,18 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/FooXeeD/python-project-83/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/FooXeeD/python-project-83/actions)
+[![all tests](https://github.com/Barzabel/python-project-83/workflows/all_tests/badge.svg)](https://github.com/FooXeed/python-project-83/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8d93f5f8033ec513a8fd/maintainability)](https://codeclimate.com/github/FooXeeD/python-project-83/maintainability)
 
 # Анализатор страниц
 
 Анализатор страниц – это сайт, который анализирует указанные страницы на SEO-пригодность по аналогии с PageSpeed Insights:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Проверить работу анализатора можно [тут](https://python-project-83-xakg.onrender.com/)
 =======
+=======
+>>>>>>> f3fecc43ad3ae002741299d8a01d44335ca9f500
 ### Проверить работу анализатора можно [тут](https://python-project-83-xakg.onrender.com/)
 
 ## Установка
@@ -21,5 +26,9 @@
 
 Команда ```make build``` установит необходимые пакеты и создаст базу данных.
 
+<<<<<<< HEAD
 Команда ```make start``` запуститcя сервер. Анализатор сайтов будет доступен по адресу: http://localhost:8000/
 >>>>>>> ac6e11e (Update 0.9.1)
+=======
+Команда ```make start``` запуститcя сервер. Анализатор сайтов будет доступен по адресу: http://localhost:8000/
+>>>>>>> f3fecc43ad3ae002741299d8a01d44335ca9f500
