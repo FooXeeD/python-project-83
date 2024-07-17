@@ -1,6 +1,6 @@
 from sqlalchemy import Column
-from page_analyzer.models import BaseModel
-
+from page_analyzer.models.basemodel import BaseModel
+from sqlalchemy import VARCHAR
 
 class Urls(BaseModel):
     __tablename__ = 'urls'

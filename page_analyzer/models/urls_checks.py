@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, ForeignKey
-from page_analyzer.models import BaseModel
-
+from page_analyzer.models.basemodel import BaseModel
+from sqlalchemy import VARCHAR, TEXT
 
 class Urls_checks(BaseModel):
     __tablename__ = 'urls_checks'

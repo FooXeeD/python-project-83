@@ -12,6 +12,7 @@ engine = create_engine(DATABASE_URL, echo=True)
 
 Session = sessionmaker(bind=engine)
 
+
 @contextmanager
 def db_session():
     session = Session()
