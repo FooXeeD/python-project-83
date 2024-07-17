@@ -5,7 +5,6 @@ from sqlalchemy import pool
 
 from page_analyzer.models.basemodel import BaseModel
 from alembic import context
-from page_analyzer.db import *
 import os
 from dotenv import load_dotenv
 
@@ -32,6 +31,7 @@ target_metadata = BaseModel.metadata
 # can be acquired:
 # my_important_option = config.get_main_option("my_important_option")
 # ... etc.
+
 
 def run_migrations_offline() -> None:
     """Run migrations in 'offline' mode.

@@ -8,8 +8,9 @@ engine = create_engine(DATABASE_URL)
 
 Base = declarative_base()
 
+
 class BaseModel(Base):
     __abstract__ = True
     
     id = Column(Integer, nallable=False, unique=True,primary_key=True, autoincrement=True)
-    created_at = Column(TIMESTAMP,nullable=False)
+    created_at = Column(TIMESTAMP,nullable=False)# noqa

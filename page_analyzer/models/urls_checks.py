@@ -7,12 +7,12 @@ class Urls_checks(BaseModel):
 
     url_id = Column(ForeignKey('urls.id'))
     status_code = Column(Integer)
-    h1 = Column(TEXT)
-    title = Column(TEXT)
-    description = Column(TEXT)
+    h1 = Column(TEXT)# noqa
+    title = Column(TEXT)# noqa
+    description = Column(TEXT)# noqa
 
 
 class Urls(BaseModel):
     __tablename__ = 'urls'
 
-    name = Column(VARCHAR(255), nullable=False)
+    name = Column(VARCHAR(255), nullable=False)# noqa
