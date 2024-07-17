@@ -6,7 +6,7 @@ from psycopg2.extras import NamedTupleCursor
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = postgresql://fooxeed:4QNoKsp1i1ifqaJa3rLYLwZKUBM4T25K@dpg-cq0kpsiju9rs73auptc0-a/db_twcf
+DATABASE_URL = 'postgresql://fooxeed:4QNoKsp1i1ifqaJa3rLYLwZKUBM4T25K@dpg-cq0kpsiju9rs73auptc0-a/db_twcf'
 
 engine = create_engine(DATABASE_URL, echo=True)
 
