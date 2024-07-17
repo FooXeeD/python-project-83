@@ -1,7 +1,5 @@
-import os
-
 from sqlalchemy import TIMESTAMP
-from sqlalchemy import create_engine, Column, Integer
+from sqlalchemy import Column, Integer
 from sqlalchemy.orm import declarative_base
 
 
