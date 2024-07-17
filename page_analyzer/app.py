@@ -1,3 +1,7 @@
+import os
+
+import requests
+from dotenv import load_dotenv
 from flask import Flask
 from flask import (
     render_template,
@@ -7,7 +11,7 @@ from flask import (
     flash,
     abort,
 )
-from dotenv import load_dotenv
+
 from .db import (
     add_url_checks,
     add_url,
@@ -16,10 +20,8 @@ from .db import (
     get_url_by_id,
     get_url_by_name
 )
-from .url import validate_url, extract_domain
 from .parser import get_data
-import os
-import requests
+from .url import validate_url, extract_domain
 
 load_dotenv()
 DATABASE_URL = os.getenv('DATABASE_URL')

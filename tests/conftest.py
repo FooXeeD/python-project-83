@@ -1,4 +1,5 @@
 import pytest
+
 from page_analyzer.app import app as application
 
 
@@ -16,4 +17,3 @@ def client(app):
 @pytest.fixture()
 def runner(app):
     return app.test_cli_runner()
-    

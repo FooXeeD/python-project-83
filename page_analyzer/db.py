@@ -1,8 +1,8 @@
-import psycopg2
-from psycopg2.extras import NamedTupleCursor
 import os
 from contextlib import contextmanager
 
+import psycopg2
+from psycopg2.extras import NamedTupleCursor
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -91,7 +91,7 @@ def get_url_by_id(config, id):
     with get_connect(config) as connect:
         with connect.cursor(cursor_factory=NamedTupleCursor) as cursor:
             cursor = connect.cursor(cursor_factory=NamedTupleCursor)
-            cursor .execute(
+            cursor.execute(
                 'SELECT * FROM urls WHERE id = (%s)',
                 (id,)
             )
