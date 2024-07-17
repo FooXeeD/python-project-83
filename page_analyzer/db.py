@@ -1,5 +1,28 @@
 import psycopg2
 from psycopg2.extras import NamedTupleCursor
+import os
+from contextlib import contextmanager
+
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+
+DATABASE_URL = os.getenv('DATABASE_URL')
+
+engine = create_engine(DATABASE_URL, echo=True)
+
+Session = sessionmaker(bind=engine)
+
+@contextmanager
+def db_session():
+    session = Session()
+    try:
+        yield session
+        session.commit()
+    except:  # noqa: E722
+        session.rollback()
+        raise
+    finally:
+        session.close()
 
 
 class DatabaseException(Exception):

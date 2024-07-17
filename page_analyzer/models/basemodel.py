@@ -1,4 +1,12 @@
-from sqlalchemy.orm import Base
+from sqlalchemy import create_engine, Column, Integer
+from sqlalchemy.orm import declarative_base
+import os
+
+DATABASE_URL = os.getenv('DATABASE_URL')
+
+engine = create_engine(DATABASE_URL)
+
+Base = declarative_base()
 
 class BaseModel(Base):
     __abstract__ = True

@@ -19,6 +19,8 @@ beautifulsoup4 = "^4.12.2"
 lxml = "^4.9.3"
 python-dotenv = "^1.0.0"
 validators = "^0.22.0"
+sqlalchemy = "^2.0.29"
+alembic = "^1.13.1"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.1.0"

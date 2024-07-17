@@ -20,20 +20,13 @@ from .url import validate_url, extract_domain
 from .parser import get_data
 import os
 import requests
-from flask_migrate import Migrate, MigrateCommand
 
 load_dotenv()
 DATABASE_URL = os.getenv('DATABASE_URL')
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 app = Flask(__name__)
-app.debg = True
-app.config = SECRET_KEY
-app.config = DATABASE_URL
-manager = Manager(app)
-db = SQLAlchemy(app)
-migrate = Migrate(app, db)
-manager.add_command('db', MigrateCommand)
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 @app.get('/')
 def index():
