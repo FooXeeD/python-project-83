@@ -1,13 +1,13 @@
 from contextlib import contextmanager
+import os
 
 import psycopg2
 from psycopg2.extras import NamedTupleCursor
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-
-DATABASE_URL = 'postgresql://fooxeed:4QNoKsp1i1ifqaJa3r' \
-               'LYLwZKUBM4T25K@dpg-cq0kpsij' \
-               'u9rs73auptc0-a/db_twcf'
+from dotenv import load_dotenv
+load_dotenv()
+DATABASE_URL = os.getenv('DATABASE_URL')
 
 engine = create_engine(DATABASE_URL, echo=True)
 
